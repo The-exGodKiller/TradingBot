@@ -32,6 +32,15 @@ It demonstrates a simple Binance Futures trading bot built in Python that can pl
 
 ---
 
+## 🌐 Bonus: Frontend (Streamlit UI)
+A simple frontend interface built using **Streamlit** to place Binance Testnet orders visually.
+
+### Run:
+```bash
+streamlit run frontend.py
+
+---
+
 ### 2. Clone the Project
 ```bash
 git clone https://github.com/YOUR_USERNAME/SimplifiedTradingBot.git

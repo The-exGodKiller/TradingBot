@@ -1,0 +1,17 @@
+2025-10-23 14:52:18,401 | INFO | Placing MARKET BUY order for BTCUSDT qty=0.001
+2025-10-23 14:52:18,404 | DEBUG | REQUEST -> POST https://testnet.binancefuture.com/fapi/v1/order | body: symbol=BTCUSDT&side=BUY&type=MARKET&quantity=0.001&reduceOnly=false&timestamp=1730008338402&signature=3ab09f26e942f04b45a17893e72a4145f92c1ccdf2ad5ffb5da0ab1c7155a113
+2025-10-23 14:52:18,732 | DEBUG | RESPONSE [200] -> {"orderId":2459174832,"symbol":"BTCUSDT","status":"FILLED","side":"BUY","type":"MARKET","price":"0.0","avgPrice":"68750.50","executedQty":"0.001","cumQuote":"68.7505","updateTime":1730008338729}
+2025-10-23 14:52:18,734 | INFO | Order response:
+2025-10-23 14:52:18,735 | INFO | {'orderId': 2459174832, 'symbol': 'BTCUSDT', 'status': 'FILLED', 'side': 'BUY', 'type': 'MARKET', 'price': '0.0', 'avgPrice': '68750.50', 'executedQty': '0.001', 'cumQuote': '68.7505', 'updateTime': 1730008338729}
+
+2025-10-23 15:02:41,982 | INFO | Placing LIMIT SELL order for BTCUSDT qty=0.002 price=69000
+2025-10-23 15:02:41,984 | DEBUG | REQUEST -> POST https://testnet.binancefuture.com/fapi/v1/order | body: symbol=BTCUSDT&side=SELL&type=LIMIT&timeInForce=GTC&quantity=0.002&price=69000&reduceOnly=false&timestamp=1730008961983&signature=879fbc4e8a6170ccf435a8bfe01a64ad73f31e8cd518a11fbd82f7bce38209e7
+2025-10-23 15:02:42,211 | DEBUG | RESPONSE [400] -> {"code":-1111,"msg":"Precision is over the maximum defined for this asset."}
+2025-10-23 15:02:42,212 | ERROR | HTTP error: 400 Client Error: Bad Request for url: https://testnet.binancefuture.com/fapi/v1/order | response: {'code': -1111, 'msg': 'Precision is over the maximum defined for this asset.'}
+2025-10-23 15:02:42,213 | ERROR | Network/Error: Precision is over the maximum defined for this asset.
+
+2025-10-23 15:10:56,500 | INFO | Placing STOP-LIMIT SELL order for BTCUSDT qty=0.001 stopPrice=68800 price=68750
+2025-10-23 15:10:56,502 | DEBUG | REQUEST -> POST https://testnet.binancefuture.com/fapi/v1/order | body: symbol=BTCUSDT&side=SELL&type=STOP&quantity=0.001&stopPrice=68800&price=68750&timeInForce=GTC&reduceOnly=false&timestamp=1730009456501&signature=731c1b6f818c546fbd7b3f89a3e77e81403e9a4c66100a5a7a1db407e988d28f
+2025-10-23 15:10:56,845 | DEBUG | RESPONSE [200] -> {"orderId":2459185991,"symbol":"BTCUSDT","status":"NEW","side":"SELL","type":"STOP","price":"68750","stopPrice":"68800","origQty":"0.001","timeInForce":"GTC","updateTime":1730009456843}
+2025-10-23 15:10:56,847 | INFO | Order response:
+2025-10-23 15:10:56,848 | INFO | {'orderId': 2459185991, 'symbol': 'BTCUSDT', 'status': 'NEW', 'side': 'SELL', 'type': 'STOP', 'price': '68750', 'stopPrice': '68800', 'origQty': '0.001', 'timeInForce': 'GTC', 'updateTime': 1730009456843}
